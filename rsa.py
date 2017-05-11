@@ -9,7 +9,6 @@ def is_prime(prime_candidate):
         i = i + 1
     return True
 
-
 def generate_prime() :
     prime_candidate = randint(3, 100)
 
@@ -75,5 +74,5 @@ N, e, d = generate_params()
 encrypted = encrypt(data, N, e)
 print("Data: " + str(data))
 print("Encrypted: " + str(encrypted))
-print("decrypted: " + str(decrypt(encrypted, N, e)))
+print("decrypted: " + str(decrypt(encrypted, N, d)))
 
